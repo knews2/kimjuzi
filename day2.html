@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="day2.css">
+    <link rel="stylesheet" href="day2.js">
+    <title>coding100Days</title>
+    <script>
+            function nightDayHandler(self){
+    var colorSide =  document.querySelector('body');
+    if(self.value === 'night') {
+    colorSide.style.backgroundColor = 'black';
+    colorSide.style.color = 'white';
+    self.value = 'day';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;  
+    while(i < alist.length){
+        alist[i].style.color = 'powderblue';
+        i = i + 1;
+      }
+    } else {
+    colorSide.style.backgroundColor = 'white';
+    colorSide.style.color = 'black';
+    self.value = 'night';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while (i < alist.length){
+        alist[i].style.color = 'black';
+        i = i + 1;
+    }
+    }
+    }
+    nightDayHandler(this);
+    </script>
+</head>
+<body>    
+    <h1><a href=web.html>WEB</a></h1>
+    <!-- value 값은 input 값의 초기값  -->
+    <input type="button" value = "night" onclick="nightDayHandler(this)">
+    <ol>
+    <li><a href=html.html>HTML</a></li>
+    <li><a href=css.html>CSS</a></li>
+    <li><a href=javascript.html>JAVASCRIPT</a></li>
+    </ol>
+    <h2>WEB</h2>
+    <p>The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators (URLs, such as https://www.example.com/), which may be interlinked by hypertext, and are accessible over the Internet.[1][2] The resources of the WWW are transferred via the Hypertext Transfer Protocol (HTTP) and may be accessed by users by a software application called a web browser and are published by a software application called a web server.</p>
+</body>
+</html>
