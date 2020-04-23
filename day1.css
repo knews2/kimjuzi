@@ -1,0 +1,33 @@
+.btn {
+    text-decoration: none;
+    text-shadow: 2px 3px rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    font-family: 'Bangers', cursive;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    transition: all 0.1s;
+}
+
+.btn:active{
+    transform: translateY(3px);
+    
+}
+/* Y축으로 10px만큼 움직이기 */
+
+.btn.blue {
+    background-color: #1f75d9;
+    border-bottom: 5px solid #165195 ;
+}
+.btn.blue:active{
+    border-bottom: 2px solid #165195 ;
+}
+.btn.red{
+    background-color: rgb(235, 135, 168);
+    border-bottom: 5px solid rgb(230, 87, 134)
+}
+.btn.red:active{
+    border-bottom: 2px solid rgb(230, 87, 134);
+}
