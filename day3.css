@@ -1,0 +1,24 @@
+body {
+    background: url(http://subtlepatterns.com/patterns/scribble_light.png);
+    font-family: Calluna, Arial, sans-serif;
+    min-height: 1000px;
+}
+#columns {
+    column-width: 320px;
+    column-gap: 15px;
+}
+#columns figure {
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);    
+}
+#columns figure img {
+    width: 100%; height: auto;
+}
+#columns figure figcaption {
+    border-top: 1px solid rgb(0, 0, 0, 0.2);
+    padding: 10px;
+}
