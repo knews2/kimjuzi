@@ -1,0 +1,39 @@
+body{
+    font-family: "fontello";
+}
+.tree, .tree ul{
+    padding-left: 15px;
+}
+.tree *::before{
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+}
+/* :before 은 tag 앞에 나타나는 가상클래스  */
+.tree li{
+    list-style-type: none;
+}
+label::before{
+    content: '\f256';
+}
+.tree a:link{
+    text-decoration: none;
+    color: grey;
+}
+a::before{
+    content: '\e800';
+} 
+.tree label{
+    cursor: pointer;
+}
+.tree input[type="checkbox"]{
+    display: none;
+} 
+/* []는 속성 선택자, input 중 type이 chekbox인 선택자  */
+.tree input[type="checkbox"]:checked~ul{
+    display: none;
+}
+/* ~ : check가 된 이 후의 ul 태그를 선택한다는 선택자 */
+.tree input[type="checkbox"]:checked+label::before{
+    content: '\f255';
+}

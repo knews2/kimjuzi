@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- javascript 없이 html 과 css 만으로 tree 만들기! -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coding100Days_day4_2</title>
+    <link rel="stylesheet" href="day4_2.css">
+    <link rel="stylesheet" href="fontello/css/fontello.css">
+</head>
+<body>
+    <ul class=tree>
+    <input type="checkbox" id="root">
+    <label for="root">ROOT</label>
+    <!-- id 값과 label for 값이 같을 경우, label이 어떤 checkbox의 lable인지 알 수 있음.-->
+    <!-- root만 선택해도 checkbox도 자동 선택됨 -->
+        <ul>
+            <li><a href="www.naver.com">node1</a></li>
+            <li><a href="www.naver.com">node2</a></li>
+            <input type="checkbox" id="root2">
+            <label for="root2">node3</label>        
+                <ul>
+                    <li><a href="www.naver.com">node31</a></li>
+                    <li><a href="www.naver.com">node32</a></li>
+                    <li><a href="www.naver.com">node33</a></li>
+                </ul>
+        </ul>
+    </ul>
+        
+</body>
+</html>
